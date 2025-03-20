@@ -1,0 +1,131 @@
+.simulation-controls {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .simulation-controls h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  .route-selection {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .route-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .point-display {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .point-display:first-child {
+    margin-right: 0.5rem;
+  }
+  
+  .point-label {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+  }
+  
+  .point-value {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .point-value.start {
+    color: #4CAF50;
+  }
+  
+  .point-value.end {
+    color: #F44336;
+  }
+  
+  .point-value.not-selected {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .simulation-message {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  
+  .speed-control {
+    margin: 1rem 0;
+  }
+  
+  .speed-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .speed-control input {
+    width: 100%;
+  }
+  
+  .control-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .start-button, .stop-button, .reset-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .start-button {
+    background-color: #4CAF50;
+    color: white;
+    grid-column: span 2;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  .start-button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+  }
+  
+  .stop-button {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .stop-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .reset-button {
+    background-color: #607d8b;
+    color: white;
+  }
+  
+  .reset-button:hover {
+    background-color: #546e7a;
+  }

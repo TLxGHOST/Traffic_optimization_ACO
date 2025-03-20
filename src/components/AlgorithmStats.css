@@ -1,0 +1,69 @@
+.algorithm-stats {
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .algorithm-stats h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .stat-item {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 0.75rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  .algorithm-explanation {
+    margin-top: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 0.75rem;
+    border-left: 4px solid #3498db;
+  }
+  
+  .algorithm-explanation h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .algorithm-explanation p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .algorithm-explanation ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
+  
+  .algorithm-explanation li {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: #444;
+  }

@@ -1,0 +1,79 @@
+.map-editor {
+    padding: 0.5rem;
+  }
+  
+  .map-editor h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  .editor-instructions {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .editor-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .editor-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .editor-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-id {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    width: 30px;
+  }
+  
+  .location-name-input {
+    flex: 1;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .item-coords {
+    color: #777;
+    font-size: 12px;
+    margin: 0 0.5rem;
+  }
+  
+  .road-locations {
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  .road-distance {
+    color: #555;
+    font-size: 12px;
+    margin-right: 0.5rem;
+  }
+  
+  .traffic-select {
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+  }
+  
+.delete-button {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
