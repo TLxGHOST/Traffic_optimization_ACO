@@ -9,3 +9,5 @@ This repository contains a traffic optimization algorithm that uses reinforcemen
 - [Tejanshu Bhandari](https://github.com/TLxGHOST)
 - [Dwaipayan Saha](https://github.com/VaricelaZoster)
 - [Kumar Shahil](https://github.com/hithisthat)
+- [Abhishek Tanwar](https://github.com/ABHITANWAR26)
+
