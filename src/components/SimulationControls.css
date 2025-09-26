@@ -1,131 +1,156 @@
 .simulation-controls {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .simulation-controls h2 {
-    margin-top: 0;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
-  }
-  
-  .route-selection {
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-  }
-  
-  .route-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-  }
-  
-  .point-display {
-    padding: 0.5rem;
-    background-color: white;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    text-align: center;
-    flex: 1;
-  }
-  
-  .point-display:first-child {
-    margin-right: 0.5rem;
-  }
-  
-  .point-label {
-    font-size: 0.8rem;
-    color: #555;
-    margin-bottom: 0.25rem;
-  }
-  
-  .point-value {
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  
-  .point-value.start {
-    color: #4CAF50;
-  }
-  
-  .point-value.end {
-    color: #F44336;
-  }
-  
-  .point-value.not-selected {
-    color: #aaa;
-    font-style: italic;
-  }
-  
-  .simulation-message {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 0.5rem 0;
-    text-align: center;
-  }
-  
-  .speed-control {
-    margin: 1rem 0;
-  }
-  
-  .speed-control label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .speed-control input {
-    width: 100%;
-  }
-  
-  .control-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .start-button, .stop-button, .reset-button {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .start-button {
-    background-color: #4CAF50;
-    color: white;
-    grid-column: span 2;
-  }
-  
-  .start-button:hover {
-    background-color: #45a049;
-  }
-  
-  .start-button:disabled {
-    background-color: #a5d6a7;
-    cursor: not-allowed;
-  }
-  
-  .stop-button {
-    background-color: #F44336;
-    color: white;
-  }
-  
-  .stop-button:hover {
-    background-color: #d32f2f;
-  }
-  
-  .reset-button {
-    background-color: #607d8b;
-    color: white;
-  }
-  
-  .reset-button:hover {
-    background-color: #546e7a;
-  }
+  padding: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+  background: linear-gradient(135deg, #fafafa, #f0f4f7);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+}
+
+.simulation-controls h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.route-selection {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+.route-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.point-display {
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.point-display:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.point-display:first-child {
+  margin-right: 0.75rem;
+}
+
+.point-label {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 0.25rem;
+}
+
+.point-value {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.point-value.start {
+  color: #4CAF50;
+}
+
+.point-value.end {
+  color: #F44336;
+}
+
+.point-value.not-selected {
+  color: #bbb;
+  font-style: italic;
+}
+
+.simulation-message {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.75rem 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.speed-control {
+  margin: 1.5rem 0;
+}
+
+.speed-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.speed-control input {
+  width: 100%;
+  accent-color: #4CAF50;
+}
+
+.control-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.start-button,
+.stop-button,
+.reset-button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.start-button {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  grid-column: span 2;
+}
+
+.start-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+}
+
+.start-button:disabled {
+  background: #a5d6a7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.stop-button {
+  background: linear-gradient(135deg, #F44336, #d32f2f);
+  color: white;
+}
+
+.stop-button:hover {
+  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+  transform: translateY(-2px);
+}
+
+.reset-button {
+  background: linear-gradient(135deg, #607d8b, #546e7a);
+  color: white;
+}
+
+.reset-button:hover {
+  background: linear-gradient(135deg, #546e7a, #455a64);
+  transform: translateY(-2px);
+}
