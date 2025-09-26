@@ -1,74 +1,99 @@
 .map-display {
-    position: relative;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-  }
-  
-  .map-display canvas {
-    display: block;
-    cursor: pointer;
-  }
-  
-  .map-legend {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    font-size: 12px;
-  }
-  
-  .legend-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  
-  .traffic-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-  
-  .traffic-dot.low {
-    background-color: #4CAF50;
-  }
-  
-  .traffic-dot.medium {
-    background-color: #FFC107;
-  }
-  
-  .traffic-dot.high {
-    background-color: #F44336;
-  }
-  
-  .location-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-  
-  .location-dot.start {
-    background-color: #4CAF50;
-  }
-  
-  .location-dot.end {
-    background-color: #F44336;
-  }
-  
-  .route-line {
-    display: inline-block;
-    width: 12px;
-    height: 3px;
-    background-color: #9c27b0;
-    margin-right: 5px;
-  }
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #b0b0b0, #8f8f8f);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-display:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.map-display canvas {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 500px; /* increase canvas height */
+  max-height: 70vh; /* responsive for smaller screens */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Legend box styling */
+.map-legend {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(220, 220, 220, 0.8);
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Legend items */
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  transition: transform 0.2s ease;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-item:hover {
+  transform: translateX(4px);
+}
+
+/* Traffic dots */
+.traffic-dot,
+.location-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.traffic-dot.low {
+  background: radial-gradient(circle at 30% 30%, #66bb6a, #2e7d32);
+}
+
+.traffic-dot.medium {
+  background: radial-gradient(circle at 30% 30%, #ffeb3b, #fbc02d);
+}
+
+.traffic-dot.high {
+  background: radial-gradient(circle at 30% 30%, #ef5350, #b71c1c);
+}
+
+/* Location dots */
+.location-dot.start {
+  background: radial-gradient(circle at 30% 30%, #4caf50, #1b5e20);
+}
+
+.location-dot.end {
+  background: radial-gradient(circle at 30% 30%, #f44336, #b71c1c);
+}
+
+/* Route line */
+.route-line {
+  display: inline-block;
+  width: 18px;
+  height: 4px;
+  background: linear-gradient(90deg, #ab47bc, #8e24aa);
+  border-radius: 2px;
+  margin-right: 8px;
+  box-shadow: 0 0 4px rgba(171, 71, 188, 0.6);
+}

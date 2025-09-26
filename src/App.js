@@ -4,6 +4,7 @@ import MapDisplay from './components/MapDisplay';
 import SimulationControls from './components/SimulationControls';
 import AlgorithmStats from './components/AlgorithmStats';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   const [locations, setLocations] = useState([]);
@@ -205,7 +206,10 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Ant Colony Traffic Optimizer</h1>
+        <h1>Ant Colony Traffic Optimizer
+          
+        </h1>
+        
         <div className="mode-selector">
           <button 
             className={editMode === 'location' ? 'active' : ''}
@@ -292,6 +296,7 @@ function App() {
           )}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
