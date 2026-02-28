@@ -2,9 +2,13 @@
 import React from "react";
 
 const authors = [
-  {
-    name: "Tejanshu Bhandari [TLxGHOST]",
+   {
+    name: "Tejanshu Bhandari ",
     github: "https://github.com/TLxGHOST",
+  },
+  {
+    name: "Kumar Shahil ",
+    github: "https://github.com/hithisthat",
   },
  
 ];
