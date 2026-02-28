@@ -7,7 +7,7 @@ const authors = [
     github: "https://github.com/TLxGHOST",
   },
   {
-    name: "Kumar Shahil ",
+    name: " and Kumar Shahil ",
     github: "https://github.com/hithisthat",
   },
  
